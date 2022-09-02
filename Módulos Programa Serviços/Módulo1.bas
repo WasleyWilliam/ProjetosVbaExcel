@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "Mï¿½dulo1"
 Sub filtro_chave()
 Dim LINHA As Double, LinhaList As Double
 
@@ -9,8 +9,8 @@ UserForm1.ListBox1.Clear
     .AddItem
     .List(0, 0) = "ID"
     .List(0, 1) = "PALAVRA CHAVE"
-    .List(0, 2) = "OBSERVAÇÃO"
-    .List(0, 3) = "CÓDIGO"
+    .List(0, 2) = "OBSERVAï¿½ï¿½O"
+    .List(0, 3) = "Cï¿½DIGO"
     .List(0, 4) = "LINGUAGEM"
      .ColumnWidths = "30;250;500;0;90"
    
@@ -99,8 +99,8 @@ UserForm1.ListBox1.Clear
     .AddItem
     .List(0, 0) = "ID"
     .List(0, 1) = "PALAVRA CHAVE"
-    .List(0, 2) = "OBSERVAÇÃO"
-    .List(0, 3) = "CÓDIGO"
+    .List(0, 2) = "OBSERVAï¿½ï¿½O"
+    .List(0, 3) = "Cï¿½DIGO"
     .List(0, 4) = "LINGUAGEM"
      .ColumnWidths = "30;250;500;0;90"
 
@@ -163,7 +163,7 @@ If .Rows(LINHA).EntireRow.Hidden = False And .Cells(LINHA, 1).Value <> Empty The
     .List(LinhaList, 1) = Planilha1.Cells(LINHA, 2).Value
     .List(LinhaList, 2) = Planilha1.Cells(LINHA, 3).Value
     .List(LinhaList, 3) = Planilha1.Cells(LINHA, 4).Value
-     .List(LinhaList, 4) = Planilha1.Cells(LINHA, 5).Value
+    .List(LinhaList, 4) = Planilha1.Cells(LINHA, 5).Value
         LinhaList = LinhaList + 1
 End With
 End If
