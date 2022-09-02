@@ -1,15 +1,15 @@
-Attribute VB_Name = "M骴uloCarregarListView"
+Attribute VB_Name = "M贸duloCarregarListView"
 '==================================================================================================================
-'   O(s) C骴igo(s) abaixo executa(m) a(s) seguinte(s) fun玢o(鮡s):
-'       - Carregam Informa玢o do Access para o ListView
+'   O(s) C贸digo(s) abaixo executa(m) a(s) seguinte(s) fun莽茫o(玫es):
+'       - Carregam Informa莽茫o do Access para o ListView
 '       - Conecta, desconecta do BD
-'       - Fecha o RecordSet
+'       - Abre e Fecha o RecordSet
 '       -
 '==================================================================================================================
 '==================================================================================================================
                                         'AUTOR.........:WASLEY WILLIAM
                                         'CONTATO.......:CHAVE D1G3
-                                        'DESCRI敲O.....:CABECALHO LISTVIEW
+                                        'DESCRI脟脙O.....:CABECALHO LISTVIEW
                                         'REFERENCIA....:
 '==================================================================================================================
 Sub Carregar_Dados_Listview()
@@ -17,7 +17,7 @@ On Error GoTo Erro
 Dim lista As Variant
 
 Set rs = New ADODB.Recordset
-M骴ulo1.ConectarBD '(Chama o M骴ulo de conectar o BD)
+M贸dulo1.ConectarBD '(Chama o M贸dulo de conectar o BD)
 
 '                        *EM NOME DA TABELA DEVE TER O NOME IGUAL A TABELA DO BD
 rs.Open "SELECT * FROM (NOME DA TABELA) ", Conexao, adOpenKeyset, adLockReadOnly
@@ -35,12 +35,12 @@ While Not rs.EOF
         End With
         rs.MoveNext
 Wend
-M骴ulo1.Fechar_Rs '(Chama o M骴ulo de fechar o BD)
-M骴ulo1.DesconectarBD '(Chama o M骴ulo de desconectar o BD)
+M贸dulo1.Fechar_Rs '(Chama o M贸dulo de fechar o BD)
+M贸dulo1.DesconectarBD '(Chama o M贸dulo de desconectar o BD)
 Exit Sub
 Erro:
-MsgBox "CARREGAR DADOS ! REFERENCIA....:M覦ULO 0001", vbCritical, "SALVAR"
+MsgBox "CARREGAR DADOS ! REFERENCIA....:M脫DULO 0001", vbCritical, "SALVAR"
 End Sub
 '==================================================================================================================
-                                        'FINAL DO C覦IGO
+                                        'FINAL DO C脫DIGO
 '==================================================================================================================
