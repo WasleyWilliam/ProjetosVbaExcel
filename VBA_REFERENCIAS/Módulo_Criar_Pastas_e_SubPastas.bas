@@ -1,32 +1,35 @@
-Attribute VB_Name = "Módulo_Criar_Pastas_e_SubPastas"
+Attribute VB_Name = "Mï¿½dulo_Criar_Pastas_e_SubPastas"
 '=========================================================
-'O código a seguir executam as seguintes funções:
-    '-Declara Variáveis
+'O cï¿½digo a seguir executam as seguintes funï¿½ï¿½es:
+    '-Declara Variï¿½veis
     '-Cria Pasta Principal
     '-Cria SubPastas baseado na pasta principal
-        ' *Obs: em NPASTA = "C:..." o C... deve indicar o caminho de geração da pasta
+        ' *Obs: em NPASTA = "C:..." o C... deve indicar o caminho de geraï¿½ï¿½o da pasta
         ' *UserForm2.TextBox2.Value equivale ao nome da pasta de um valor digitado em um texbox
 '=========================================================
-Sub CRIAR_PASTAS_SUBPASTAS()
 '=========================================================
 'AUTOR.........:WASLEY WILLIAM
 'CONTATO.......:ww.adm@outlook.com
-'DESCRIÇÃO.....:CRIAR PASTAS E SUB PASTAS
+'DESCRIï¿½ï¿½O.....:CRIAR PASTAS E SUB PASTAS
 'REFERENCIA....:
-Dim NPASTA As String
-Dim SUBPASTA As String
 
-EstaPastaDeTrabalho.Activate
-NPASTA = "C:..." & UserForm2.Label2.Caption
 
-SUBPASTA = NPASTA & "\" & UserForm2.TextBox2.Value
+Sub CRIAR_PASTAS_SUBPASTAS()
 
-        If Dir(NPASTA, vbDirectory) = "" Then
-            MkDir NPASTA
-        End If
-        If Dir(SUBPASTA, vbDirectory) = "" Then
-            MkDir SUBPASTA
-        End If
+    Dim NPASTA As String
+    Dim SUBPASTA As String
+
+    EstaPastaDeTrabalho.Activate
+    NPASTA = "C:..." & UserForm2.Label2.Caption
+
+    SUBPASTA = NPASTA & "\" & UserForm2.TextBox2.Value
+
+            If Dir(NPASTA, vbDirectory) = "" Then
+                MkDir NPASTA
+            End If
+            If Dir(SUBPASTA, vbDirectory) = "" Then
+                MkDir SUBPASTA
+            End If
 
 End Sub
 '=========================================================

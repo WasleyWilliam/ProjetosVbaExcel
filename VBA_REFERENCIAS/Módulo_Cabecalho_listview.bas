@@ -1,8 +1,8 @@
-Attribute VB_Name = "Módulo_Cabecalho_listview"
-Sub Cabecalho_ListView()
+Attribute VB_Name = "Mï¿½dulo_Cabecalho_listview"
+
 '==================================================================================================================
-'   O Código abaixo executa a seguinte função:
-'       - Cria Cabeçalhos em uma ListView
+'   O Cï¿½digo abaixo executa a seguinte funï¿½ï¿½o:
+'       - Cria Cabeï¿½alhos em uma ListView
 '
 '
 '
@@ -12,24 +12,25 @@ Sub Cabecalho_ListView()
 '==================================================================================================================
 '                                    AUTOR.........:WASLEY WILLIAM
 '                                    CONTATO.......:CHAVE D1G3
-'                                    DESCRIÇÃO.....:CABEÇALHO LISTVIEW
+'                                    DESCRIï¿½ï¿½O.....:CABEï¿½ALHO LISTVIEW
 '                                    REFERENCIA....:
 '==================================================================================================================
+Sub Cabecalho_ListView()
 
-With UserForm2.ListView1 '(Alterar - UserForm2.ListView1)
-        .Gridlines = True
-        .View = lvwReport
-        .FullRowSelect = True
-        .MultiSelect = True
-        .ColumnHeaders.Add Text:="ID", Width:=30, Alignment:=0
-        .ColumnHeaders.Add Text:="REFERENCIA", Width:=65, Alignment:=0 '(Alterar - "REFERENCIA")
-        .ColumnHeaders.Add Text:="PALAVRA_CHAVE", Width:=130, Alignment:=0 '(Alterar - "PALAVRA_CHAVE")
-        .ColumnHeaders.Add Text:="DESCRICAO", Width:=450, Alignment:=0 '(Alterar - "DESCRICAO")
-        .ColumnHeaders.Add Text:="DATA_HORA", Width:=100, Alignment:=0 '(Alterar - "DATA_HORA")
-        .ColumnHeaders.Add Text:="INCLUIDO_POR", Width:=120, Alignment:=0 '(Alterar - "INCLUIDO_POR")
-                                 'Texto Cabeçalho, Tamanho Cabeçalho, Alinhamento
-End With
+        With UserForm2.ListView1 '(Alterar - UserForm2.ListView1)
+                .Gridlines = True
+                .View = lvwReport
+                .FullRowSelect = True
+                .MultiSelect = True
+                .ColumnHeaders.Add Text:="ID", Width:=30, Alignment:=0
+                .ColumnHeaders.Add Text:="REFERENCIA", Width:=65, Alignment:=0 '(Alterar - "REFERENCIA")
+                .ColumnHeaders.Add Text:="PALAVRA_CHAVE", Width:=130, Alignment:=0 '(Alterar - "PALAVRA_CHAVE")
+                .ColumnHeaders.Add Text:="DESCRICAO", Width:=450, Alignment:=0 '(Alterar - "DESCRICAO")
+                .ColumnHeaders.Add Text:="DATA_HORA", Width:=100, Alignment:=0 '(Alterar - "DATA_HORA")
+                .ColumnHeaders.Add Text:="INCLUIDO_POR", Width:=120, Alignment:=0 '(Alterar - "INCLUIDO_POR")
+                                        'Texto Cabeï¿½alho, Tamanho Cabeï¿½alho, Alinhamento
+        End With
 End Sub
 '==================================================================================================================
-                                        'FINAL DO CÓDIGO
+                                        'FINAL DO Cï¿½DIGO
 '==================================================================================================================
