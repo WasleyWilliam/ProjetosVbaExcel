@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "MÃ³dulo1"
 Sub filtro_chave()
 Dim LINHA As Double, LinhaList As Double
 
@@ -9,8 +9,8 @@ UserForm1.ListBox1.Clear
     .AddItem
     .List(0, 0) = "ID"
     .List(0, 1) = "PALAVRA CHAVE"
-    .List(0, 2) = "OBSERVAÇÃO"
-    .List(0, 3) = "CÓDIGO"
+    .List(0, 2) = "OBSERVAÃ‡ÃƒO"
+    .List(0, 3) = "CÃ“DIGO"
     .List(0, 4) = "LINGUAGEM"
      .ColumnWidths = "30;250;500;0;90"
    
@@ -99,8 +99,8 @@ UserForm1.ListBox1.Clear
     .AddItem
     .List(0, 0) = "ID"
     .List(0, 1) = "PALAVRA CHAVE"
-    .List(0, 2) = "OBSERVAÇÃO"
-    .List(0, 3) = "CÓDIGO"
+    .List(0, 2) = "OBSERVAÃ‡ÃƒO"
+    .List(0, 3) = "CÃ“DIGO"
     .List(0, 4) = "LINGUAGEM"
      .ColumnWidths = "30;250;500;0;90"
 
@@ -145,8 +145,7 @@ End With
 
 
 Exit Sub
-
-
+                                ' sdg  testesda
 End If
 Selection.AutoFilter Field:=2, Criteria1:=CStr("*" + UserForm1.TextBox1.Text) + "*"
 Selection.AutoFilter Field:=5, Criteria1:=CStr("*" + UserForm1.TextBox3.Text) + "*"
